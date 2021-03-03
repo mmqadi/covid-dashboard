@@ -1,0 +1,14 @@
+* {
+  background-color: #673ab7;
+  color: #ffffff;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+mat-grid-tile {
+  border: 1px solid #ffffff;
+}
