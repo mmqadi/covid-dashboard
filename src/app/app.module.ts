@@ -8,9 +8,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CountrySearchComponent } from './country-search/country-search.component';
+import { CountryCardComponent } from './country-search/country-card/country-card.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent],
+  declarations: [AppComponent, DashboardComponent, CountrySearchComponent, CountryCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
