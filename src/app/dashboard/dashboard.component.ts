@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DashboardService } from './dashboard.service';
+import { TotalData } from '../api/covid';
 
 @Component({
   selector: 'dashboard',
@@ -6,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  constructor() {}
+  totalData: TotalData;
+  constructor(private dashboardService: DashboardService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getTotalData();
+  }
+
+  getTotalData() {
+    this.dashboardService.getTotals().subscribe((totalData: TotalData[]) => {
+      this.totalData = totalData[0];
+    });
+  }
 }

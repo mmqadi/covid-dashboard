@@ -11,4 +11,13 @@
 
 mat-grid-tile {
   border: 1px solid #ffffff;
+  text-align: center;
+}
+
+mat-grid-tile div {
+  width: 100%;
+}
+
+.tile-heading {
+  font-weight: bold;
 }
