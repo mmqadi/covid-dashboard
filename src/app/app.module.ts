@@ -10,9 +10,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CountrySearchComponent } from './country-search/country-search.component';
 import { CountryCardComponent } from './country-search/country-card/country-card.component';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, CountrySearchComponent, CountryCardComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    CountrySearchComponent,
+    CountryCardComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,6 +28,10 @@ import { CountryCardComponent } from './country-search/country-card/country-card
     FormsModule,
     HttpClientModule,
     MatGridListModule,
+    MatInputModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

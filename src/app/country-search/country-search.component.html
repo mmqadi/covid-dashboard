@@ -1,1 +1,5 @@
-<p>country-search works!</p>
+<mat-form-field appearance="standard">
+  <mat-label>Country Name</mat-label>
+  <input matInput placeholder="EX. USA" [(ngModel)]="searchString">
+</mat-form-field>
+<button mat-raised-button (click)="search(searchString)">Primary</button>

@@ -5,3 +5,10 @@ export interface TotalData {
   deaths: number;
   lastUpdate: Date;
 }
+
+export interface CountryData {
+  confirmed: number;
+  recovered: number;
+  critical: number;
+  deaths: number;
+}
